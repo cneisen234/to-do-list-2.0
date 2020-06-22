@@ -1,0 +1,64 @@
+body {
+    /*takes good font and applies to all text*/
+    font-family: 'Permanent Marker', cursive;
+    background-color: lightblue;
+}
+header {
+    /*size and position of clock*/
+    font-size: 50px;
+    text-align: center;
+}
+#list {
+    /*style of task started box*/
+    background: linear-gradient(white, pink);
+    border-radius: 20px;
+}
+#completeList {
+    /*style of task completed box*/
+    background: linear-gradient(white, lightgreen);
+    border-radius: 20px;
+}
+#justStarted {
+    /*style of task added box*/
+    background: linear-gradient(white, aqua);
+    border-radius: 20px;
+}
+
+#pastDue {
+    /*style of past due box*/
+    background-color: darkred;
+    color: white;
+    border-radius: 20px;
+}
+
+section {
+    /*large border around outsides*/
+    border: 5px solid black;
+}
+.jumbotron {
+    /*background color of jombotron*/
+    background: linear-gradient(45deg, white, lightblue);
+}
+
+#jumboTitle {
+    /*font and position of large text at top*/
+    font-size: 100px;
+    margin-top: -50px;
+     color: black;
+}
+
+.smallBorder {
+    /*small border around insides of bigger boxes*/
+    border: 1px solid black;
+}
+p {
+    /*aligns any text with p tag to center*/
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+span {
+    /*makes certain text orange*/
+    color:orange;
+}

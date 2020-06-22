@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <script src="vendors/jquery-3.3.1.min.js" charset="utf-8"></script> <!--JQuery-->
+    <script src="vendors/sweetalert.min.js"></script> <!--Sweet Alerts-->
+    <script src="vendors/moment.min.js"></script> <!--moment-->
+    <script src="scripts/client.js" charset="utf-8"></script> <!--JavaScript-->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> <!--Google Fonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> <!--Bootstrap-->
+    <link rel="stylesheet" href="styles.css"> <!--CSS-->
+</head>
+<body class="container-fluid">
+    <!--large header at top-->
+    <main class="jumbotron">
+        <main class="row">
+            <!--large letters at top-->
+        <p id="jumboTitle" class="col-12">Your Very Own To Do List!</p>
+        </main>
+   <main class="row">
+       <main class="col">
+           <main class="row">
+               <!--user input field-->
+    <input type="text" id="task" class="col-8" placeholder="enter your task">
+                <!--set the priority of the task-->
+    <select id="priority" class="col-4">
+        <option value="low">low</option>
+        <option value="medium">medium</option>
+        <option value="high">high</option>
+    </select>
+                <!--completed task defaults to incomplete, this is hidden from the user-->
+    <select id="complete" style="display: none;">
+        <option value="incomplete">incomplete</option>
+    </select>
+        </main>
+        </main>
+        <!--add task button-->
+    <button id="addTask" class="btn btn-info col-lg-3 col-md-12">Add Task</button>
+        <!--location of clock-->
+    <header id="time" class="col-lg-9 col-md-12"></header>
+    </main>
+</main>
+        <!--placeholder divs for when tasks populate, refer to client.js-->
+    <main class="row">
+        <main class="col-lg-4 col-md-12"><p>Task Added</p></br><main id="justStarted" class="col-12"></main></main>
+        <main class="col-lg-4 col-md-12"><p>Task Started</p><br><main id="list" class="col-12"></main></main>
+        <main class="col-lg-4 col-md-12"><p>Task Completed</p></br><main id="completeList" class="col-12"></main></main>
+    </main>
+        <!--placeholder for past due box-->
+    <main class="row">
+        <main class="col-12">
+            <p><span>Past Due</span></p></br>
+            <main id="pastDue" class="col-12"></main>
+        </main>
+    </main>
+</body>
+</html>
